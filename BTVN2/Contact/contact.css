@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset 1 số styles mặc định */
+* {
+  /* Đặt lại quy tắc tính chiều ngang (width) của một element */
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Thảo khảo thêm CSS Selectors ở đây https://www.w3schools.com/cssref/css_selectors.asp 
+    Chọn theo tên thẻ: div, a, span, ...
+    Chọn theo tên class: .class-name, .product, .product-detail
+    Chọn theo id: #id-name, #product-1
+*/
+
+/* Kiến thức cần học: 
+    1, Flexbox (Siêu quan trọng)
+    - https://www.w3schools.com/css/css3_flexbox.asp
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+    - Game https://flexboxfroggy.com/ để ôn tập lại về
+
+    2, Grid
+    - https://www.w3schools.com/css/css_grid.asp
+*/
+
+/* Chọn ra các thẻ section có id là how-it-work*/
+section#contact {
+  display: flex;
+    /* Sắp xếp các element con theo chiều dọc (flex luôn sắp xếp theo hàng ngang) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 50%;
+  max-width: 50%;
+}
+
+section#contact h2 {
+  margin: 30px 0;
+  font-weight: 200;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+section#contact .divider {
+  height: 2px;
+  width: 100px;
+  background-color: #fcba03;
+}
+
+section#contact .contact {
+  margin-top: 30px;
+  max-width: 80%;
+  width: 1000px;
+}
+
+section#contact .contact #container {
+  display: flex;
+}
+
+section#contact .contact #container #infos {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 5%;
+  gap: 30px;
+  font-weight: 300;
+}
+
+section#contact .contact .main #container #forms {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 20%;
+  gap: 25px;
+}
+
+section#contact .contact .main #container #forms #submit {
+  width: 30%;
+  height: 15%;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  background-color: orange;
+}
+
+section#contact .contact .main #container #forms #submit:hover {
+  cursor: pointer;
+}
+
+
+
+

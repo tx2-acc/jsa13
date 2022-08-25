@@ -1,0 +1,70 @@
+* {
+    box-sizing: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif, "Montserrat";
+}
+
+section#footer {
+    background-color: #262626;
+    height: auto;
+    font-size: 22px;
+    color: rgb(92, 92, 92);
+}
+
+section#footer #container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 12%;
+}
+
+
+/* Footer Upper */
+section#footer #upper {
+    display: flex;
+    margin-top: 2%;
+}
+
+section#footer #upper #left .links {
+    margin-left: 10px;
+}
+
+section#footer #upper #left .links:hover {
+    color: white;
+    cursor: pointer;
+}
+
+section#footer #upper #right {
+    margin-left: 57%;
+}
+
+section#footer #upper #right img {
+    width: 35px;
+    height: auto;
+}
+
+section#footer #upper #right img:hover {
+    cursor: pointer;
+}
+
+/* Footer Lower */
+
+section#footer #lower {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 98%;
+}
+
+section#footer #lower .websum {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+section#footer #lower img {
+    width: 25px;
+    height: auto;
+}
