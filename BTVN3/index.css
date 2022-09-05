@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Reset */
+* { 
+    box-sizing: border-box;
+    font-family: sans-serif, "Montserrat";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero */
+#hero {
+    background-image: url("./Resources/hero.jpg");
+    height: 600px;
+    background-size: cover;   
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply; /* multiply: Blend the background color with the background-img's color. */
+    /* object-fit: use for img elements */
+    /* content - Fill in image in the element | cover - resize image to fit in the element*/
+}
+
+#hero > .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#hero > .header > img {
+    width: 100px;
+    height: 100px;
+}
+
+#hero > .header > nav > a {
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+#hero > .content { 
+    margin: 200px 0 0 250px;
+    font-size: 30px;
+}
+
+#hero > .content > h1 {
+    font-weight: 100;
+    color: white;
+}
+
+#hero > .content > .button-wrapper > button {
+    padding: 10px 20px;
+    border: 1px solid orange;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: white;
+    background-color: orange;
+}
+
+#hero > .content > .button-wrapper > button:nth-child(2) { /*...nth-child(int): choose a specific element that doesnt has it own class/id.*/
+    color: orange;
+    background: none;
+}
+
+/* Features */
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#features > h2 {
+    font-size: 40px;
+    margin-top: 100px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#features > .divider {
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+}
+
+#features > .features-desc {
+    margin: 55px;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 45%;
+}
+
+#features > .features-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 100px;
+    max-width: 70%;
+}
+
+#features > .features-list > .features-item > svg {
+    width: 50px;
+    height: 50px;
+    color: orange;
+}
+
+#features > .features-list > .features-item > h3 {
+    font-size: 20px;
+    font-weight: 500px;
+    text-transform: uppercase;
+}
+
+#features > .features-list > .features-item > p {
+    width: 200px;
+}
+
+/* Exhibit */
+
+.exhibit {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.items {
+    width: 25%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.items img {
+    max-width: 100%;
+    opacity: 0.5;
+    transition: all 0.25s ease-in-out; /* Thoi gian thay doi kich thuoc anh */
+}
+
+.items img:hover {
+    opacity: 0.7;
+    transform: scale(1.1, 1.1); /* Thay doi kich thuoc anh */
+}
+
+/* How it works */
+section#how-it-works {
+    display: flex;
+    /* Sắp xếp các element con theo chiều dọc (flex luôn sắp xếp theo hàng ngang) */
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    background-size: cover;   
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+   }
+  
+  section#how-it-works h2 {
+    margin: 30px 0;
+    font-weight: 200;
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+  
+  section#how-it-works .divider {
+    height: 2px;
+    width: 100px;
+    background-color: #fcba03;
+  }
+  
+  section#how-it-works .how-it-works {
+    margin-top: 30px;
+    width: 70%;
+    max-width: 800px;
+    display: flex;
+  }
+  
+  section#how-it-works .how-it-works img {
+    width: 30%;
+    height: auto;
+  }
+  
+  section#how-it-works .how-it-works .list {
+    width: 80%;
+  }
+  
+  section#how-it-works .how-it-works .list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  section#how-it-works .how-it-works .list ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  section#how-it-works .how-it-works .list ul li > img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  section#how-it-works .how-it-works .list ul li span {
+    margin-left: 20px;
+    height: fit-content;
+  }
+  
+  section#how-it-works .how-it-works .list ul li button {
+    background-color: transparent;
+    border: none;
+    width: 240px;
+  }
+  
+  section#how-it-works .how-it-works .list ul li button img {
+    width: 100%;
+  }
+  
+
+  /* Cities */
+  section#cities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+   }
+  
+   section#cities h2 {
+    margin: 30px 0;
+    font-weight: 200;
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+
+  section#cities .divider {
+    height: 2px;
+    width: 100px;
+    background-color: #fcba03;
+  }
+
+  section#cities .list-container {
+    max-width: 100%;
+    margin-left: 38%;
+    margin-top: 3%;
+  }
+
+  section#cities .list-container > .city-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 50px;
+    max-width: 50%;
+  }
+
+section#cities .list-container > .cities { 
+    display: flex;
+    flex-direction: column;
+}
+
+section#cities .list-container ul li a {
+    color: #fcba03;
+}
+
+section#cities .list-container ul li img { 
+    width: 300px;
+}
+
+section#cities .list-container ul li > .city-name {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+section#cities .list-container ul li > .consumers img {
+    width: 30px;
+    height: auto;
+}
+
+section#cities .list-container ul li > .chefs img { 
+    width: 30px;
+    height: auto;
+}
+
+section#cities .list-container ul li a img {
+    width: 30px;
+    height: auto;
+}
+
+/* Prices */
+section#prices { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    background-size: cover;   
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+}
+
+section#prices h2 {
+    margin: 30px 0;
+    font-weight: 200;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+  section#prices .divider {
+    height: 2px;
+    width: 100px;
+    background-color: #fcba03;
+}
+
+section#prices .list-container {
+    margin-top: 3%;
+    max-width: 100%;
+    margin-left: 38%;
+}
+
+section#prices ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+section#prices ul li {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    width: 400px;
+    gap: 50px;
+    background-size: cover;   
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: multiply;
+}
+
+section#prices ul li span { 
+    display: block;
+}
+
+section#prices ul li .box-1 > .type {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 4% 0 0 3%;
+}
+
+section#prices ul li .box-1 > .prices {
+    margin: 3% 0 0 3%;
+    font-size: 50px;
+    font-weight: 100;
+    color: #fcba03;
+}
+
+section#prices ul li .box-1 > .additional-info {
+    margin: 0 0 0 3%;
+}
+
+section#prices ul li .box-1 > .box-2 { 
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 5% 0 5% 0;
+    padding: 2%;
+    border-radius: 2px;
+    background-size: cover;   
+    background-color: rgba(255, 255, 255, 1);
+    background-blend-mode: multiply;
+}
+
+section#prices ul li .box-1 .box-2 span > img {
+    margin: 5px 5px 0px 10px;
+    width: 15px;
+}
+
+section#prices ul li .box-1 > .sign-up {
+    margin: 0 0 3% 25%;
+    border: 1px solid #eb8500;
+    font-size: 18px;
+    color: #eb8500;
+    border-radius: 50px;
+    background-color: white;
+}
+
+section#prices ul li .box-1 > .sign-up:hover {
+    color: white;
+    background-color: #eb8500;
+}
+
+/* Contact */
+section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 3% 50%;
+    max-width: 50%;
+  }
+  
+  section#contact h2 {
+    margin: 30px 0;
+    font-weight: 200;
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+  
+  section#contact .divider {
+    height: 2px;
+    width: 100px;
+    background-color: #fcba03;
+  }
+  
+  section#contact .contact {
+    margin-top: 30px;
+    max-width: 80%;
+    width: 1000px;
+  }
+  
+  section#contact .contact #container {
+    display: flex;
+  }
+  
+  section#contact .contact #container #infos {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 5%;
+    gap: 30px;
+    font-weight: 300;
+  }
+  
+  section#contact .contact .main #container #forms {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 20%;
+    gap: 25px;
+  }
+  
+  section#contact .contact .main #container #forms #submit {
+    width: 30%;
+    height: 15%;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    background-color: orange;
+  }
+  
+  section#contact .contact .main #container #forms #submit:hover {
+    cursor: pointer;
+  }
+
+/* Footer */
+section#footer {
+    background-color: #262626;
+    height: auto;
+    font-size: 22px;
+    color: rgb(92, 92, 92);
+}
+
+section#footer #container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 12%;
+}
+
+
+/* Footer Upper */
+section#footer #upper {
+    display: flex;
+    margin-top: 2%;
+}
+
+section#footer #upper #left .links {
+    margin-left: 10px;
+}
+
+section#footer #upper #left .links:hover {
+    color: white;
+    cursor: pointer;
+}
+
+section#footer #upper #right {
+    margin-left: 57%;
+}
+
+section#footer #upper #right img {
+    width: 35px;
+    height: auto;
+}
+
+section#footer #upper #right img:hover {
+    cursor: pointer;
+}
+
+/* Footer Lower */
+
+section#footer #lower {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 98%;
+}
+
+section#footer #lower .websum {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+section#footer #lower img {
+    width: 25px;
+    height: auto;
+}
